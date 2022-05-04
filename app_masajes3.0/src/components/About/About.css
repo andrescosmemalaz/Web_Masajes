@@ -1,0 +1,143 @@
+.aboutCard h4 {
+    color: #00cccc;
+}
+.aboutCard button {
+    background-color:#00cccc;
+    border-radius:28px;
+    border:1px solid #0061a9;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px white;
+}
+
+
+.aboutCard h1 {
+    font-size: 35px;
+    font-weight: 100;
+}
+.aboutCard h1 span {
+    font-weight: bold;
+}
+.aboutCard p {
+    margin-top: 20px;
+    font-weight: 300;
+}
+.aboutCard .row1 {
+    padding-right: 30px;
+}
+.aboutCard .row.image,
+.aboutCard .image {
+    position: relative;
+}
+.aboutCard .control-btn .button {
+    left: 40%;
+    
+}
+
+.aboutCard next{
+    position: absolute;
+    top: 100%;
+    z-index: 30;
+    right:5%;
+}
+
+.aboutCard  .control-btn .prev{
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    left:42%;
+
+}
+.aboutCard  .control-btn i {
+    position: absolute;
+    top: 32.7%;
+    z-index: 10;
+    left:43.8%;
+}
+
+.aboutCard img {
+    width: 90%;
+    height: 70%;
+}
+/* button{
+     */
+
+.aboutCard .control-btn i {
+    font-size: 30px;
+}
+/* .aboutCard .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 44vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.aboutCard .image::before {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    height: 120px;
+    border-radius: 5px;
+    z-index: -1;
+}
+.aboutCard .control-btn::before {
+    content: "";
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 0;
+    top: 4%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 70px;
+    border-radius: 5px;
+    z-index: -1;
+} */
+.features .flex_space {
+    flex-direction: row-reverse;
+}
+.features img {
+    width: 90%;
+}
+.features .control-btn,
+.features .image::after,
+.features .image::before,
+.features .control-btn::before {
+    display: none;
+}
+.features h1 {
+    font-weight: bold;
+}
+.features h1 span {
+    color: #00cccc;
+}
+@media screen and (max-width: 768px) {
+    .features .flex_space,
+    .aboutCard {
+    flex-direction: column;
+    }
+    .aboutCard .image::after,
+    .aboutCard .image::before,
+    .aboutCard .control-btn::before {
+    display: none;
+    }
+    .aboutCard .row {
+    width: 100%;
+    }
+    .aboutCard .image {
+    margin-top: 50px;
+    }
+    .aboutCard img {
+    width: 100%;
+    }
+}
